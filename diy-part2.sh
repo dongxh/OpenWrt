@@ -10,12 +10,12 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-
-# Modify default IP
-sed -i 's/192.168.1.2/192.168.50.5/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.2/192.168.50.5/g' package/base-files/files/bin/config_generate
+# 1.更改默认IP
+sed -i 's/192.168.1.1/192.168.0.2/g' package/base-files/files/bin/config_generate
 
 # 2.清除默认密码/改密码为 
-# sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
 
 # 5.修改默认主题
-# sed -i 's/luci-theme-bootstrap/luci-theme-argonne/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argonne/g' feeds/luci/collections/luci/Makefile
