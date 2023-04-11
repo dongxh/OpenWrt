@@ -5,3 +5,4 @@ src-git telephony https://git.openwrt.org/feed/telephony.git
 src-git small https://github.com/kenzok8/small.git
 src-git kenzo https://github.com/kenzok8/openwrt-packages.git
 src-git OpenClash https://github.com/vernesong/OpenClash.git
+src-git cdnspeedtest https://github.com/immortalwrt-collections/openwrt-cdnspeedtest.git
